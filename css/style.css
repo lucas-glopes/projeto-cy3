@@ -1,0 +1,163 @@
+/* importar fonte Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* geral */
+body {
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navbar */
+nav {
+    background-color: #dad9d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container {
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0 17px;
+}
+
+/* logo do topo */
+nav .container .logo {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .container .logo img:first-child {
+    width: 60px;
+    margin-bottom: 5px;
+}
+
+nav .container .logo img:last-child {
+    width: 120px;
+}
+
+/* seções da navbar */
+nav .container .secao {
+    width: 425px;
+    height: 75px;
+    position: relative;
+}
+
+/* contato da navbar */
+nav .container .secao .contato {
+    font-size: .8em;
+    color: #1b253e;
+}
+
+nav .container .secao.direita .contato {
+    position: absolute;
+    right: 0;
+}
+
+nav .container .secao .contato i {
+    font-size: .8em;
+    margin-right: 5px;
+}
+
+/* navegação da navbar */
+nav .container .secao .navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .container .secao.esquerda .navegacao {
+    margin-top: 30px;
+}
+
+nav .container .secao.direita .navegacao {
+    margin-top: 40px;
+}
+
+/* icones de rede social da navbar */
+nav .container .secao .redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+nav .container .secao .redes-sociais li {
+    margin: 7px;
+}
+
+nav .container .secao .redes-sociais li a {
+    color: #1b253e;
+}
+
+/* links de navegação da navbar */
+nav .container .secao .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .8em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav .container .secao .links li {
+    margin: 0 20px;
+}
+
+nav .container .secao .links li a {
+    color: #1b253e;
+}
+
+/* botões da navbar */
+nav .container .secao.direita .navegacao button {
+    background-color: #1b253e;
+    color: #d7b872;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+nav .container .secao.direita .navegacao button i:first-child {
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+nav .container .secao.direita .navegacao button i:last-child {
+    margin-left: 5px;
+    font-size: 1.2em;
+}
+
+/* ícone do menu hambúrguer */
+nav .container i.fa-bars {
+    font-size: 2em;
+    color: #1b253e;
+    margin-right: 30px;
+}
+
+/* responsivo para telas médias */
+@media screen and (max-width: 1023px) {
+    /* ocultar seções da navbar */ 
+    nav .container .secao {
+        display: none;
+    }
+
+    /* ajutar posição da logo da navbar */
+    nav .container .logo {
+        margin-left: 5px;
+    }
+
+    /* mostrar ícone do menu hambúrguer */ {
+
+    }
+}
