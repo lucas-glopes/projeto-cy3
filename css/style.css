@@ -143,6 +143,79 @@ nav .container i.fa-bars {
     font-size: 2em;
     color: #1b253e;
     margin-right: 30px;
+    display: none;
+}
+
+/* menu hambúrguer */
+.menu-hamburguer {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;    
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    overflow-x: auto;
+}
+
+.menu-hamburguer .container {
+    background-color: #1b253e;
+    height: 100vh;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 60px;
+    overflow-x: auto;
+}
+
+/* contato do menu de hambúrguer */
+.menu-hamburguer .container .contato {
+    color: white;
+    text-align: center;
+}
+
+.menu-hamburguer .container .contato i {
+    margin-right: 7px;
+}
+
+.menu-hamburguer .container .contato:first-child {
+    margin-bottom: 20px;
+}
+
+/* redes sociais do menu de hambúrguer */
+.menu-hamburguer .container .redes-sociais {
+    display: flex;
+}
+
+.menu-hamburguer .container .redes-sociais li {
+    margin: 70px 10px;
+    font-size: 1.6em;
+}
+
+.menu-hamburguer .container .redes-sociais li a {
+    color: white;
+}
+
+/* links do menu hambúrguer */
+.menu-hamburguer .container .links {
+    text-align: center;
+    width: 100%;
+}
+
+.menu-hamburguer .container .links li {
+    padding: 30px 0;
+    font-size: 1.2em;
+    border-top: 2px solid white;
+}
+
+.menu-hamburguer .container .links li:last-child {
+    border-bottom: 2px solid white;
+}
+
+.menu-hamburguer .container .links li a {
+    color: white;
 }
 
 /* responsivo para telas médias */
@@ -157,7 +230,19 @@ nav .container i.fa-bars {
         margin-left: 5px;
     }
 
-    /* mostrar ícone do menu hambúrguer */ {
-
+    /* mostrar ícone do menu hambúrguer */
+    nav .container i.fa-bars {
+        display: block;
     }
+}
+
+/* responsivo para telas pequenas */
+@media screen and (max-width: 767px) {
+    /* container do menu de hamburger */
+    .menu-hamburguer .container {
+        width: 100%;
+        padding: 50px 20px;
+    }
+
+    
 }
