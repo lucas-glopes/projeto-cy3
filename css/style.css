@@ -480,6 +480,61 @@ header .container .imagem img {
     z-index: -1;
 }
 
+/* contato */
+.contato {
+    padding: 0 10px;
+}
+
+.contato .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 60px 90px;
+}
+
+.contato .container h3 {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    color: #151d31;
+}
+
+.contato .container h3 > span {
+    display: block;
+    font-size: 2em;
+    text-transform: none;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+.contato .container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contato .container div .links li button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #0c2442, #151d31);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    width: 220px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.contato .container div .links li button i.fa-location-dot {
+    font-size: 2.3em;
+    margin-right: 5px;
+}
+
+/* botões de contato  */
+
 /* rodapé */
 footer {
     width: 100%;
@@ -795,6 +850,15 @@ footer .cookies .container button {
     .especialidades .areas ul {
         grid-template: 1fr / 1fr;
         padding: 0 50px;
+    }
+    
+    /* contato */
+    .contato .container h3 {
+        font-size: .8em;
+    }
+
+    .contato .container h3 > span {
+        font-size: 1.7em;
     }
 
     /* redes socias do rodapé */
