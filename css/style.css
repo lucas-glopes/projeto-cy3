@@ -224,6 +224,111 @@ nav .container i.fa-bars {
     color: white;
 }
 
+/* rodapé */
+footer {
+    width: 100%;
+}
+
+footer .container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+footer .rodape {
+    background-color: #151d31;
+}
+
+/* botão do whatsapp do footer */
+footer .container.btn-wa {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+}
+
+footer .container.btn-wa button {
+    border: none;
+    border-radius: 10px;
+    background-color: #00cd5c;
+    padding: 10px 15px 13px;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+footer .container.btn-wa button i {
+    font-size: 1.7em;
+    transform: translateY(3px);
+    margin-right: 5px;
+}
+
+footer .container.btn-wa button a {
+    color: white;
+}
+
+footer .rodape .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+/* copy do footer */
+footer .rodape .copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .rodape .copy .logo {
+    margin-right: 12px;
+}
+
+footer .rodape .copy .logo img {
+    width: 60px;
+}
+
+footer .rodape .copy .textos {
+    color: white;
+    font-size: .8em;
+}
+
+footer .rodape .copy .textos p {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* redes socias do rodapé */
+footer .rodape .redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .rodape .redes-sociais p {
+    color: #e3b96e;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 700;
+    margin-right: 25px;
+}
+
+footer .rodape .redes-sociais ul {
+    display: flex;
+}
+
+footer .rodape .redes-sociais ul li {
+    margin-right: 20px;
+    font-size: 1.3em;
+}
+
+footer .rodape .redes-sociais ul li:first-child {
+    font-size: 1.1em;
+    transform: translateY(1px);
+}
+
+footer .rodape .redes-sociais ul li a {
+    color: #e3b96e;
+}
+
 /* responsivo para telas médias */
 @media screen and (max-width: 1023px) {
     /* ajustar padding e width do nav */
