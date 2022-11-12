@@ -345,7 +345,7 @@ footer .rodape .redes-sociais ul li a {
 /* seção sobre os cookies */
 footer .cookies {
     background-color: #cc9f73;
-    padding: 27px 0;
+    padding: 27px 10px;
 }
 
 footer .cookies .container {
@@ -359,6 +359,7 @@ footer .cookies .container p {
     color: #3a3a3a;
     padding: 0 100px;
     line-height: 20px;
+    text-align: justify;
 }
 
 footer .cookies .container p a {
@@ -400,6 +401,19 @@ footer .cookies .container button {
     /* mostrar ícone do menu hambúrguer */
     nav .container i.fa-bars {
         display: block;
+    }
+
+    /* seção de cookies */
+    footer .cookies .container {
+        flex-direction: column;
+    }
+
+    footer .cookies .container p {
+        padding: 0 20px;
+    }
+
+    footer .cookies .container button {
+        margin: 20px 0 0;
     }
 }
 
