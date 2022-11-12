@@ -1,5 +1,5 @@
 /* importar fonte Open Sans */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 /* geral */
 body {
@@ -236,6 +236,66 @@ nav .container i.fa-bars {
     color: white;
 }
 
+/* header */
+header {
+    background-color: #151d31;
+    padding-left: 40px;
+}
+
+header .container {
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* textos */
+header .container .textos {
+    height: 100%;
+    color: white;
+    margin-right: 140px;
+}
+
+header .container .textos h1 {
+    color: #cc9f73;
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+header .container .textos h1 span {
+    font-size: .6em;
+    margin-right: 5px;
+}
+
+header .container .textos h2 {
+    font-size: 1.3em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+header .container .textos p {
+    line-height: 32px;
+    font-size: .9em;
+}
+
+/* imagem */
+header .container .imagem {
+    border-left: 2px solid #777073;
+    border-right: 2px solid #777073;
+    display: flex;
+    justify-content: flex-end;
+    height: 500px;
+    padding-left: 17px;
+}
+
+header .container .imagem img {
+    height: 100%;
+}
+
 /* rodapé */
 footer {
     width: 100%;
@@ -402,6 +462,29 @@ footer .cookies .container button {
         display: block;
     }
 
+    /* textos do header */
+    header .container .textos {
+        margin-right: 60px;
+    }
+
+    header .container .textos h1 {
+        font-size: 1.8em;
+    }
+
+    header .container .textos h2 {
+        font-size: 1.1em;
+    }
+
+    header .container .textos p {
+        text-align: justify;
+        font-size: .8em;
+    }
+    /* imagem do header */
+    header .container .imagem {
+        height: 400px;
+        padding-left: 10px;
+    }
+
     /* seção de cookies */
     footer .cookies .container {
         flex-direction: column;
@@ -432,6 +515,49 @@ footer .cookies .container button {
     /* logo do rodapé */
     footer .rodape .copy {
         margin-bottom: 15px;
+    }
+
+    /* header */
+    header {
+        padding: 10px;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    /* textos do header */
+    header .container .textos {
+        margin: 0;
+        padding: 15px 15px 30px;
+    }
+
+    header .container .textos h1 {
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    header .container .textos h2 {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    /* imagem do header */
+    header .container .imagem {
+        order: -1;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #777073;
+        height: 430px;
+        width: 100%;
+        padding: 0 0 15px;
+    }
+
+    header .container .imagem img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
     }
 
     /* redes socias do rodapé */
