@@ -10,8 +10,6 @@ iconeMenuHamburguer.addEventListener("click", () => {
 
     // animar o container para dentro da tela
     containerMenuHamburguer.style.marginRight = "0";
-
-    menuHamburguerAtivo = true;
 });
 
 // ocultar barra lateral
@@ -26,6 +24,12 @@ iconeFecharMenuHamburguer.addEventListener("click", () => {
 
     // animar o container para fora da tela
     containerMenuHamburguer.style.marginRight = "-100%";
-
-    menuHamburguerAtivo = true;
 });
+
+// fechar seção de cookies
+const botaoAceitarCookies = document.querySelector('footer .cookies .container button')
+
+botaoAceitarCookies.addEventListener('click', () => {
+    document.querySelector('footer .cookies')
+        .style.display = 'none'
+})
