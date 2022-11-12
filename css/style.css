@@ -152,7 +152,7 @@ nav .container i.fa-bars {
 
 /* menu hambúrguer */
 .menu-hamburguer {
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, 0);
     position: absolute;
     width: 100%;    
     height: 100%;
@@ -160,8 +160,9 @@ nav .container i.fa-bars {
     display: flex;
     justify-content: flex-end;
     overflow-x: auto;
-
-    display: none;
+    visibility: hidden;
+    transition: .3s ease;
+    z-index: 1;
 }
 
 .menu-hamburguer .container {
@@ -174,6 +175,18 @@ nav .container i.fa-bars {
     align-items: center;
     padding: 50px 60px;
     overflow-x: auto;
+    margin-right: -100%;
+    transition: .3s ease;
+}
+
+/* ícone de fechar menu de hambúrguer */
+.menu-hamburguer .container .fa-xmark {
+    color: white;
+    align-self: flex-end;
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 /* contato do menu de hambúrguer */
@@ -364,5 +377,26 @@ footer .rodape .redes-sociais ul li a {
         padding: 50px 20px;
     }
 
-    
+    /* container do rodapé */
+    footer .rodape .container {
+        flex-direction: column;
+    }
+
+    /* logo do rodapé */
+    footer .rodape .copy {
+        margin-bottom: 15px;
+    }
+
+    /* redes socias do rodapé */
+    footer .rodape .redes-sociais {
+        flex-direction: column;
+    }
+
+    footer .rodape .redes-sociais p {
+        margin: 0 0 12px;
+    }
+
+    footer .rodape .redes-sociais ul li {
+        margin: 0 15px;
+    }
 }
