@@ -296,6 +296,81 @@ header .container .imagem img {
     height: 100%;
 }
 
+/* sobre o dr. (página de início) */
+.sobre.inicio {
+    padding: 0 10px;
+    background: url("../images/Logo BG.png") no-repeat center;
+}
+
+.sobre.inicio .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 60px 90px;
+}
+
+/* informações */
+.sobre.inicio .container .info {
+    padding-right: 30px;
+}
+
+.sobre.inicio .container .info h3 {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    color: #151d31;
+}
+
+.sobre.inicio .container .info h3 > span {
+    display: block;
+    font-size: 2em;
+    text-transform: none;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+.sobre.inicio .container .info h3 > span span {
+    font-size: .7em;
+    margin-right: 5px;
+}
+
+.sobre.inicio .container .info p {
+    color: #777073;
+    font-size: .8em;
+    margin-bottom: 35px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+/* links da seção sobre */
+.sobre.inicio .container .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobre.inicio .container .links li {
+    margin: 10px;
+    width: 100%;
+}
+
+.sobre.inicio .container .links li button {
+    width: 100%;
+    border: 1px solid #d2ad6d;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 15px 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #d2ad6d;
+}
+
 /* rodapé */
 footer {
     width: 100%;
@@ -558,6 +633,28 @@ footer .cookies .container button {
         height: 100%;
         object-fit: cover;
         object-position: top center;
+    }
+
+    /* seção sobre (página de início) */
+    .sobre.inicio .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 50px;
+    }
+
+    /* info da seção sobre (página de início) */
+    .sobre.inicio .container .info h3 {
+        font-size: .8em;
+    }
+
+    .sobre.inicio .container .info h3 > span {
+        font-size: 1.7em;
+    }
+
+    /* links da seção sobre (página de início) */
+    .sobre.inicio .container .links {
+        width: 100%;
     }
 
     /* redes socias do rodapé */
