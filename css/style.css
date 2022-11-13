@@ -127,6 +127,7 @@ nav .container .secao.direita .navegacao button {
     padding: 12px 15px;
     text-transform: uppercase;
     font-size: .7em;
+    cursor: pointer;
 }
 
 nav .container .secao.direita .navegacao button i:first-child {
@@ -240,6 +241,15 @@ nav .container i.fa-bars {
 header {
     background-color: #151d31;
     padding-left: 40px;
+}
+
+header > h1 {
+    text-transform: uppercase;
+    color: #cc9f73;
+    font-size: 1.9em;
+    padding: 50px 0;
+    text-align: center;
+    font-weight: 600;
 }
 
 header .container {
@@ -608,6 +618,81 @@ section.contato .container > div form input[type="submit"] {
     cursor: pointer;
 }
 
+/* onde estamos */
+.onde-estamos {
+    width: 100%;
+    padding: 0 10px;
+    background-color: #ececec;
+}
+
+.onde-estamos .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 60px 90px;
+}
+
+.onde-estamos .container h3 {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    color: #151d31;
+}
+
+.onde-estamos .container h3 > span {
+    display: block;
+    font-size: 2em;
+    text-transform: none;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+/* consultórios */
+.onde-estamos .container .consultorios {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    gap: 30px;
+}
+
+.onde-estamos .container .consultorios li {
+    width: 100%;
+}
+
+.onde-estamos .container .consultorios li img {
+    width: 100%;
+}
+
+.onde-estamos .container .consultorios li address {
+    text-align: center;
+    color: #777073;
+    font-size: .8em;
+    margin: 20px 0;
+    line-height: 22px;
+}
+
+.onde-estamos .container .consultorios li a {
+    display: block;
+    padding: 10px;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.onde-estamos .container .consultorios li button {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #cc9f73;
+    border-radius: 10px;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    color: #cc9f73;
+    padding: 15px 60px;
+    cursor: pointer;
+}
+
 /* rodapé */
 footer {
     width: 100%;
@@ -630,6 +715,8 @@ footer .container.btn-wa {
 }
 
 footer .container.btn-wa button {
+    color: white;
+    cursor: pointer;
     border: none;
     border-radius: 10px;
     background-color: #00cd5c;
@@ -642,10 +729,6 @@ footer .container.btn-wa button i {
     font-size: 1.7em;
     transform: translateY(3px);
     margin-right: 5px;
-}
-
-footer .container.btn-wa button a {
-    color: white;
 }
 
 footer .rodape .container {
@@ -774,6 +857,12 @@ footer .cookies .container button {
         display: block;
     }
 
+    /* header */
+    header > h1 {
+        font-size: 1.5em;
+        padding: 35px 0;
+    }
+
     /* textos do header */
     header .container .textos {
         margin-right: 60px;
@@ -819,6 +908,12 @@ footer .cookies .container button {
 
 /* responsivo para telas pequenas */
 @media screen and (max-width: 767px) {
+    /* header */
+    header > h1 {
+        font-size: 1.2em;
+        padding: 20px 0;
+    }
+
     /* container do menu de hamburger */
     .menu-hamburguer .container {
         width: 100%;
@@ -962,6 +1057,16 @@ footer .cookies .container button {
 
     section.contato .container > div form input[type="submit"] {
         width: 100%;
+    }
+
+    /* onde estamos */
+    .onde-estamos .container {
+        padding: 30px 40px;
+    }
+
+    /* consultórios da seção "onde estamos" */
+    .onde-estamos .container .consultorios {
+        grid-template: 1fr 1fr / 1fr;
     }
 
     /* container do rodapé */
