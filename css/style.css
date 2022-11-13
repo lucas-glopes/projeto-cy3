@@ -5,6 +5,7 @@
 body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 16px;
+    background-color: #eeeeee;
 }
 
 a {
@@ -693,6 +694,79 @@ section.contato .container > div form input[type="submit"] {
     cursor: pointer;
 }
 
+/* FAQ */
+.faq {
+    width: 100%;
+    padding: 0 10px;
+    background-color: #eeeeee;
+}
+
+.faq .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 60px 70px 20px;
+}
+
+/* seção da dúvida */
+.duvida {
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+/* seção da pergunta */
+.duvida .pergunta {
+    padding: 12px 25px 17px 50px;
+    border: 2px solid #cc9f73;
+    color: #cc9f73;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.duvida .pergunta > i {
+    color: #151d31;
+    font-size: 1.5em;
+    transform: translateY(2px);
+}
+
+.duvida .pergunta p {
+    font-size: 1em;
+}
+
+.duvida .pergunta p > i {
+    font-size: 1.5em;
+    transform: translateY(3px);
+    margin-right: 35px;
+}
+
+/* seção da resposta */
+.duvida .resposta {
+    width: 95%;
+    background-color: rgba(255, 255, 255, .4);
+    margin: 0 auto;
+    padding: 30px 100px 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #777073;
+    font-size: .8em;
+    line-height: 22px;
+    display: none;
+}
+
+.duvida .resposta p {
+    text-align: justify;
+}
+
+.duvida .resposta .localizacao {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* rodapé */
 footer {
     width: 100%;
@@ -1067,6 +1141,50 @@ footer .cookies .container button {
     /* consultórios da seção "onde estamos" */
     .onde-estamos .container .consultorios {
         grid-template: 1fr 1fr / 1fr;
+    }
+
+    /* FAQ */
+    .faq .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 30px 40px 10px;
+    }
+
+    /* seção da pergunta */
+    .faq .container .duvida .pergunta {
+        padding: 10px 20px;
+    }
+
+    .faq .container .duvida .pergunta > i {
+        font-size: 1em;
+        margin-left: 15px;
+    }
+
+    .faq .container .duvida .pergunta p {
+        font-size: .8em;
+        line-height: 25px;
+    }
+
+    .faq .container .duvida .pergunta p > i {
+        margin-right: 10px;
+    }
+
+    /* seção da resposta */
+    .duvida .resposta {
+        padding: 10px 30px 40px;
+    } 
+
+    .duvida .resposta .localizacao {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .duvida .resposta .localizacao address {
+        text-align: justify;
+    }
+
+    .duvida .resposta .localizacao address:first-child {
+        margin-bottom: 30px;
     }
 
     /* container do rodapé */

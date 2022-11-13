@@ -33,3 +33,36 @@ botaoAceitarCookies.addEventListener('click', () => {
     document.querySelector('footer .cookies')
         .style.display = 'none'
 })
+
+// mostra resposta das perguntas frequentes
+const perguntasFrequentes = document.querySelectorAll('.duvida .pergunta')
+const respostas = document.querySelectorAll('.duvida .resposta')
+const iconesAbrir = document.querySelectorAll('.duvida .pergunta > i')
+
+let perguntaAberta = []
+
+perguntasFrequentes.forEach((pergunta, index) => {
+    perguntaAberta[index] = false
+})
+
+perguntasFrequentes.forEach((pergunta, index) => {
+    perguntasFrequentes[index].addEventListener('click', () => {
+        if (!perguntaAberta[index]) {
+            // rotacionar ícone
+            iconesAbrir[index].style.transform = 'translateY(2px) rotate(180deg)'
+
+            // mostrar resposta
+            respostas[index].style.display = 'block'
+
+            perguntaAberta[index] = true
+        } else {
+            // voltrar ícone à rotação original
+            iconesAbrir[index].style.transform = 'translateY(2px) rotate(0)'
+
+            // ocultar resposta
+            respostas[index].style.display = 'none'
+
+            perguntaAberta[index] = false
+        }
+    })
+})
