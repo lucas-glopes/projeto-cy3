@@ -1204,20 +1204,20 @@ footer .cookies .container button {
     }
 
     /* seção da pergunta */
-    .faq .container .duvida .pergunta {
+    .duvida .pergunta {
         padding: 10px 20px;
     }
 
-    .faq .container .duvida .pergunta > i {
+    .duvida .pergunta > i {
         font-size: 1em;
         margin-left: 15px;
     }
 
-    .faq .container .duvida .pergunta p {
+    .duvida .pergunta p {
         font-size: .8em;
     }
 
-    .faq .container .duvida .pergunta p > i {
+    .duvida .pergunta p > i {
         margin-right: 10px;
     }
 
@@ -1254,6 +1254,12 @@ footer .cookies .container button {
     }
 
     /* dúvidas frequntes (página da especialidade) */
+    .duvidas-frequentes .container h3 {
+        font-size: 1.5em;
+        padding: 0;
+        text-align: center;
+    }
+
     .duvidas-frequentes .container {
         padding: 30px 40px;
     }
