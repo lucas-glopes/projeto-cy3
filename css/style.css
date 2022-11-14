@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* importar fonte Open Sans */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
@@ -19,16 +26,25 @@ a {
 /* navbar */
 nav {
     background-color: #dad9d6;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    /* align-items: center; */
     padding: 0 10px;
 }
 
 nav .container {
     max-width: 1024px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 22px 0 17px;
 }
@@ -36,9 +52,18 @@ nav .container {
 /* logo do topo */
 nav .container .logo {
     width: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -76,8 +101,14 @@ nav .container .secao .contato i {
 
 /* navegação da navbar */
 nav .container .secao .navegacao {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -91,8 +122,14 @@ nav .container .secao.direita .navegacao {
 
 /* icones de rede social da navbar */
 nav .container .secao .redes-sociais {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-left: 15px;
 }
@@ -107,8 +144,14 @@ nav .container .secao .redes-sociais li a {
 
 /* links de navegação da navbar */
 nav .container .secao .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     font-size: 0.8em;
     font-weight: 700;
@@ -163,10 +206,16 @@ nav .container i.fa-bars {
     width: 100%;
     height: 100%;
     top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     overflow: auto;
     visibility: hidden;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
     z-index: 1;
 }
@@ -175,19 +224,31 @@ nav .container i.fa-bars {
     background-color: #1b253e;
     height: 100vh;
     width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 50px 60px;
     overflow: auto;
     margin-right: -100%;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 
 /* ícone de fechar menu de hambúrguer */
 .menu-hamburguer .container .fa-xmark {
     color: white;
+    -ms-flex-item-align: end;
     align-self: flex-end;
     font-size: 2.2em;
     margin-bottom: 40px;
@@ -210,6 +271,8 @@ nav .container i.fa-bars {
 
 /* redes sociais do menu de hambúrguer */
 .menu-hamburguer .container .redes-sociais {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -267,7 +330,11 @@ header.titulo.link h1 {
 
 header.titulo .link-voltar {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-bottom: 35px;
 }
@@ -283,8 +350,14 @@ header .container {
     max-width: 1024px;
     height: 100%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -323,7 +396,11 @@ header .container .textos p {
 header .container .imagem {
     border-left: 2px solid #777073;
     border-right: 2px solid #777073;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     height: 500px;
     padding-left: 17px;
@@ -340,8 +417,14 @@ header .container .imagem img {
 }
 
 .sobre.inicio .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     max-width: 1024px;
     margin: 0 auto;
@@ -385,9 +468,18 @@ header .container .imagem img {
 
 /* links da seção sobre */
 .sobre.inicio .container .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -424,8 +516,14 @@ header .container .imagem img {
 .especialidades .cabecalho .elementos {
     max-width: 1024px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -463,6 +561,30 @@ header .container .imagem img {
     outline: 2px solid hsl(223, 40%, 25%);
 }
 
+.especialidades .cabecalho form input::-webkit-input-placeholder {
+    font-style: italic;
+    font-size: 0.8em;
+    color: white;
+}
+
+.especialidades .cabecalho form input::-moz-placeholder {
+    font-style: italic;
+    font-size: 0.8em;
+    color: white;
+}
+
+.especialidades .cabecalho form input:-ms-input-placeholder {
+    font-style: italic;
+    font-size: 0.8em;
+    color: white;
+}
+
+.especialidades .cabecalho form input::-ms-input-placeholder {
+    font-style: italic;
+    font-size: 0.8em;
+    color: white;
+}
+
 .especialidades .cabecalho form input::placeholder {
     font-style: italic;
     font-size: 0.8em;
@@ -478,7 +600,10 @@ header .container .imagem img {
 .especialidades .areas ul {
     max-width: 1024px;
     margin: -52px auto 0;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 1fr 30px 1fr;
+    -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 50px;
@@ -499,11 +624,15 @@ header .container .imagem img {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-weight: 700;
     line-height: 24px;
     color: #151d31;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     text-align: center;
 }
@@ -548,16 +677,36 @@ section.contato .container h3 > span {
 }
 
 section.contato .container > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 /* botões de contato  */
 section.contato .container > div .links li button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#0c2442),
+        to(#151d31)
+    );
+    background-image: -o-linear-gradient(top, #0c2442, #151d31);
     background-image: linear-gradient(to bottom, #0c2442, #151d31);
     color: white;
     cursor: pointer;
@@ -587,6 +736,14 @@ section.contato .container > div .links li button i.fa-whatsapp {
 }
 
 section.contato .container > div .links li:last-child button {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#00cd5c),
+        to(#1a914f)
+    );
+    background-image: -o-linear-gradient(top, #00cd5c, #1a914f);
     background-image: linear-gradient(to bottom, #00cd5c, #1a914f);
     margin-top: 50px;
 }
@@ -605,6 +762,7 @@ section.contato .container > div form .input input,
 section.contato .container > div form .input select,
 section.contato .container > div form .input textarea {
     width: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 2px solid #cc9f73;
     border-radius: 10px;
@@ -677,7 +835,10 @@ section.contato .container > div form input[type="submit"] {
 
 /* consultórios */
 .onde-estamos .container .consultorios {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr 30px 1fr;
     grid-template: 1fr / 1fr 1fr;
     gap: 30px;
 }
@@ -701,6 +862,8 @@ section.contato .container > div form input[type="submit"] {
 .onde-estamos .container .consultorios li a {
     display: block;
     padding: 10px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: 0 auto;
 }
@@ -746,8 +909,14 @@ section.contato .container > div form input[type="submit"] {
     color: #cc9f73;
     background-color: white;
     border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     cursor: pointer;
 }
@@ -755,6 +924,8 @@ section.contato .container > div form input[type="submit"] {
 .duvida .pergunta > i {
     color: #151d31;
     font-size: 1.5em;
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
     transform: translateY(2px);
 }
 
@@ -765,6 +936,8 @@ section.contato .container > div form input[type="submit"] {
 
 .duvida .pergunta p > i {
     font-size: 1.5em;
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
     transform: translateY(3px);
     margin-right: 35px;
 }
@@ -789,8 +962,14 @@ section.contato .container > div form input[type="submit"] {
 
 .duvida .resposta .localizacao {
     margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -898,9 +1077,16 @@ section.contato .container > div form input[type="submit"] {
 }
 
 .sobre .container .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: 40px auto 0;
 }
@@ -927,7 +1113,10 @@ section.contato .container > div form input[type="submit"] {
 .lista-especialidades .areas ul {
     max-width: 1024px;
     margin: 0 auto;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 1fr 30px 1fr;
+    -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     gap: 30px;
     padding: 35px 0 50px;
@@ -948,11 +1137,15 @@ section.contato .container > div form input[type="submit"] {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-weight: 700;
     line-height: 24px;
     color: #151d31;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     text-align: center;
 }
@@ -982,7 +1175,11 @@ footer .rodape {
 
 /* botão do whatsapp do footer */
 footer .container.btn-wa {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     padding: 12px;
 }
@@ -1000,21 +1197,35 @@ footer .container.btn-wa button {
 
 footer .container.btn-wa button i {
     font-size: 1.7em;
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
     transform: translateY(3px);
     margin-right: 5px;
 }
 
 footer .rodape .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 12px;
 }
 
 /* copy do footer */
 footer .rodape .copy {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -1038,8 +1249,14 @@ footer .rodape .copy .textos p {
 
 /* redes socias do rodapé */
 footer .rodape .redes-sociais {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -1052,6 +1269,8 @@ footer .rodape .redes-sociais p {
 }
 
 footer .rodape .redes-sociais ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -1062,6 +1281,8 @@ footer .rodape .redes-sociais ul li {
 
 footer .rodape .redes-sociais ul li:first-child {
     font-size: 1.1em;
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
     transform: translateY(1px);
 }
 
@@ -1076,8 +1297,14 @@ footer .cookies {
 }
 
 footer .cookies .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -1099,6 +1326,8 @@ footer .cookies .container button {
     border-radius: 10px;
     background-color: transparent;
     color: #3a3a3a;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
     min-width: max-content;
     padding: 10px 35px;
     cursor: pointer;
@@ -1175,6 +1404,9 @@ footer .cookies .container button {
     }
 
     .sobre .container .links {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         margin: 0;
         width: 100%;
@@ -1197,6 +1429,9 @@ footer .cookies .container button {
 
     /* seção de cookies */
     footer .cookies .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1238,6 +1473,9 @@ footer .cookies .container button {
     }
 
     header .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1259,6 +1497,8 @@ footer .cookies .container button {
 
     /* imagem do header */
     header .container .imagem {
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
         order: -1;
         border-left: none;
         border-right: none;
@@ -1271,14 +1511,23 @@ footer .cookies .container button {
     header .container .imagem img {
         width: 100%;
         height: 100%;
+        -o-object-fit: cover;
         object-fit: cover;
+        -o-object-position: top center;
         object-position: top center;
     }
 
     /* seção sobre (página de início) */
     .sobre.inicio .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         padding: 40px 50px;
     }
@@ -1299,8 +1548,15 @@ footer .cookies .container button {
 
     /* cabeçalho das especialidades */
     .especialidades .cabecalho .elementos {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -1318,6 +1574,8 @@ footer .cookies .container button {
 
     /* bloco das especialidades */
     .especialidades .areas ul {
+        -ms-grid-rows: 1fr;
+        -ms-grid-columns: 1fr;
         grid-template: 1fr / 1fr;
         padding: 0 50px;
     }
@@ -1340,6 +1598,9 @@ footer .cookies .container button {
     }
 
     section.contato .container > div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1354,6 +1615,8 @@ footer .cookies .container button {
 
     /* formulário de contato */
     section.contato .container > div form {
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
         order: -1;
         margin: 0 0 70px;
     }
@@ -1369,6 +1632,8 @@ footer .cookies .container button {
 
     /* consultórios da seção "onde estamos" */
     .onde-estamos .container .consultorios {
+        -ms-grid-rows: 1fr 1fr;
+        -ms-grid-columns: 1fr;
         grid-template: 1fr 1fr / 1fr;
     }
 
@@ -1403,7 +1668,12 @@ footer .cookies .container button {
     }
 
     .duvida .resposta .localizacao {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
 
@@ -1424,7 +1694,9 @@ footer .cookies .container button {
         float: none;
         width: 100%;
         height: 260px;
+        -o-object-fit: cover;
         object-fit: cover;
+        -o-object-position: top center;
         object-position: top center;
         margin: 0 0 20px;
     }
@@ -1457,18 +1729,25 @@ footer .cookies .container button {
         float: none;
         width: 100%;
         height: 260px;
+        -o-object-fit: cover;
         object-fit: cover;
+        -o-object-position: top center;
         object-position: top center;
         margin: 0 0 20px;
     }
 
     /* lista de especialidade da página de especialidades */
     .lista-especialidades .areas ul {
+        -ms-grid-rows: 1fr 1fr;
+        -ms-grid-columns: 1fr;
         grid-template: 1fr 1fr / 1fr;
     }
 
     /* container do rodapé */
     footer .rodape .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1479,6 +1758,9 @@ footer .cookies .container button {
 
     /* redes socias do rodapé */
     footer .rodape .redes-sociais {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
