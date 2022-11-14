@@ -268,10 +268,11 @@ header.titulo .link-voltar {
     padding-bottom: 35px;
 }
 
-header.titulo a {
+header.titulo p {
     color: white;
     text-decoration: underline;
     font-size: .8em;
+    cursor: pointer;
 }
 
 header .container {

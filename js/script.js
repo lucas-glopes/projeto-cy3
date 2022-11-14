@@ -68,3 +68,10 @@ perguntasFrequentes.forEach((pergunta, index) => {
         }
     });
 });
+
+// voltar para página anteriror ao clicar no botão "voltar"
+const linkVoltar = document.querySelector("header.titulo p");
+
+linkVoltar.addEventListener("click", () => {
+    window.history.back();
+});
