@@ -1,15 +1,15 @@
 /* importar fonte Open Sans */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 /* geral */
 body {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 16px;
     background-color: #eeeeee;
 }
 
 body.bg-cinza-escuro {
-    background-color: #DAD9D6;
+    background-color: #dad9d6;
 }
 
 a {
@@ -60,7 +60,7 @@ nav .container .secao {
 
 /* contato da navbar */
 nav .container .secao .contato {
-    font-size: .8em;
+    font-size: 0.8em;
     color: #1b253e;
 }
 
@@ -70,7 +70,7 @@ nav .container .secao.direita .contato {
 }
 
 nav .container .secao .contato i {
-    font-size: .8em;
+    font-size: 0.8em;
     margin-right: 5px;
 }
 
@@ -110,7 +110,7 @@ nav .container .secao .links {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: .8em;
+    font-size: 0.8em;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -131,7 +131,7 @@ nav .container .secao.direita .navegacao button {
     border-radius: 10px;
     padding: 12px 15px;
     text-transform: uppercase;
-    font-size: .7em;
+    font-size: 0.7em;
     cursor: pointer;
 }
 
@@ -160,14 +160,14 @@ nav .container i.fa-bars {
     background-color: rgba(0, 0, 0, 0);
     position: fixed;
     top: 0;
-    width: 100%;    
+    width: 100%;
     height: 100%;
     top: 0;
     display: flex;
     justify-content: flex-end;
     overflow: auto;
     visibility: hidden;
-    transition: .3s ease;
+    transition: 0.3s ease;
     z-index: 1;
 }
 
@@ -182,7 +182,7 @@ nav .container i.fa-bars {
     padding: 50px 60px;
     overflow: auto;
     margin-right: -100%;
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 /* ícone de fechar menu de hambúrguer */
@@ -275,7 +275,7 @@ header.titulo .link-voltar {
 header.titulo p {
     color: white;
     text-decoration: underline;
-    font-size: .8em;
+    font-size: 0.8em;
     cursor: pointer;
 }
 
@@ -303,7 +303,7 @@ header .container .textos h1 {
 }
 
 header .container .textos h1 span {
-    font-size: .6em;
+    font-size: 0.6em;
     margin-right: 5px;
 }
 
@@ -316,7 +316,7 @@ header .container .textos h2 {
 
 header .container .textos p {
     line-height: 32px;
-    font-size: .9em;
+    font-size: 0.9em;
 }
 
 /* imagem */
@@ -371,13 +371,13 @@ header .container .imagem img {
 }
 
 .sobre.inicio .container .info h3 > span span {
-    font-size: .7em;
+    font-size: 0.7em;
     margin-right: 5px;
 }
 
 .sobre.inicio .container .info p {
     color: #777073;
-    font-size: .8em;
+    font-size: 0.8em;
     margin-bottom: 35px;
     line-height: 22px;
     text-align: justify;
@@ -446,7 +446,7 @@ header .container .imagem img {
 
 .especialidades .cabecalho form label i {
     color: white;
-    font-size: .8em;
+    font-size: 0.8em;
     margin-right: 2px;
 }
 
@@ -456,7 +456,7 @@ header .container .imagem img {
     border-radius: 5px;
     padding: 5px;
     color: white;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .especialidades .cabecalho form input:focus {
@@ -465,7 +465,7 @@ header .container .imagem img {
 
 .especialidades .cabecalho form input::placeholder {
     font-style: italic;
-    font-size: .8em;
+    font-size: 0.8em;
     color: white;
 }
 
@@ -568,7 +568,7 @@ section.contato .container > div .links li button {
     padding: 15px 25px;
     text-align: justify;
     line-height: 20px;
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
 section.contato .container > div .links li button i.fa-location-dot {
@@ -611,8 +611,8 @@ section.contato .container > div form .input textarea {
     padding: 15px 12px;
     background-color: white;
     outline: none;
-    font-size: .8em;    
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     margin-bottom: 22px;
 }
 
@@ -637,7 +637,7 @@ section.contato .container > div form input[type="submit"] {
     border-radius: 10px;
     background-color: white;
     text-transform: uppercase;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 1em;
     color: #cc9f73;
@@ -693,7 +693,7 @@ section.contato .container > div form input[type="submit"] {
 .onde-estamos .container .consultorios li address {
     text-align: center;
     color: #777073;
-    font-size: .8em;
+    font-size: 0.8em;
     margin: 20px 0;
     line-height: 22px;
 }
@@ -712,7 +712,7 @@ section.contato .container > div form input[type="submit"] {
     border-radius: 10px;
     background-color: white;
     text-transform: uppercase;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 1em;
     color: #cc9f73;
@@ -772,13 +772,13 @@ section.contato .container > div form input[type="submit"] {
 /* seção da resposta */
 .duvida .resposta {
     width: 95%;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, 0.5);
     margin: 0 auto;
     padding: 30px 100px 50px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     color: #777073;
-    font-size: .8em;
+    font-size: 0.8em;
     line-height: 22px;
     display: none;
 }
@@ -799,7 +799,7 @@ section.contato .container > div form input[type="submit"] {
     background-color: white;
     width: 100%;
     padding: 0 10px;
-    background: url('../images/Logo BG.png') no-repeat center;
+    background: url("../images/Logo BG.png") no-repeat center;
     background-size: 470px;
 }
 
@@ -820,7 +820,7 @@ section.contato .container > div form input[type="submit"] {
     text-align: justify;
     margin-bottom: 20px;
     line-height: 22px;
-    font-size: .75em;
+    font-size: 0.75em;
     color: #777073;
 }
 
@@ -847,7 +847,6 @@ section.contato .container > div form input[type="submit"] {
 }
 
 /* bloco da página de especialidades */
-
 
 /* seção sobre o dr. leandro */
 .sobre {
@@ -879,7 +878,7 @@ section.contato .container > div form input[type="submit"] {
 }
 
 .sobre .container h3 > span span {
-    font-size: .7em;
+    font-size: 0.7em;
     margin-right: 5px;
 }
 
@@ -894,7 +893,7 @@ section.contato .container > div form input[type="submit"] {
     text-align: justify;
     margin-bottom: 20px;
     line-height: 22px;
-    font-size: .75em;
+    font-size: 0.75em;
     color: #777073;
 }
 
@@ -996,7 +995,7 @@ footer .container.btn-wa button {
     background-color: #00cd5c;
     padding: 10px 15px 13px;
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
 footer .container.btn-wa button i {
@@ -1029,7 +1028,7 @@ footer .rodape .copy .logo img {
 
 footer .rodape .copy .textos {
     color: white;
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
 footer .rodape .copy .textos p {
@@ -1047,7 +1046,7 @@ footer .rodape .redes-sociais {
 footer .rodape .redes-sociais p {
     color: #e3b96e;
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: 0.8em;
     font-weight: 700;
     margin-right: 25px;
 }
@@ -1083,7 +1082,7 @@ footer .cookies .container {
 }
 
 footer .cookies .container p {
-    font-size: .8em;
+    font-size: 0.8em;
     color: #3a3a3a;
     padding: 0 100px;
     line-height: 20px;
@@ -1116,7 +1115,7 @@ footer .cookies .container button {
         width: 100%;
     }
 
-    /* ocultar seções da navbar */ 
+    /* ocultar seções da navbar */
     nav .container .secao {
         display: none;
     }
@@ -1152,7 +1151,7 @@ footer .cookies .container button {
 
     header .container .textos p {
         text-align: justify;
-        font-size: .8em;
+        font-size: 0.8em;
     }
     /* imagem do header */
     header .container .imagem {
@@ -1230,7 +1229,7 @@ footer .cookies .container button {
 
     /* contato do menu de hambúrguer */
     .menu-hamburguer .container .contato {
-        font-size: .7em;
+        font-size: 0.7em;
     }
 
     /* header */
@@ -1286,7 +1285,7 @@ footer .cookies .container button {
 
     /* info da seção sobre (página de início) */
     .sobre.inicio .container .info h3 {
-        font-size: .8em;
+        font-size: 0.8em;
     }
 
     .sobre.inicio .container .info h3 > span {
@@ -1322,7 +1321,7 @@ footer .cookies .container button {
         grid-template: 1fr / 1fr;
         padding: 0 50px;
     }
-    
+
     /* contato */
     section.contato {
         background-position: center;
@@ -1333,7 +1332,7 @@ footer .cookies .container button {
     }
 
     section.contato .container h3 {
-        font-size: .8em;
+        font-size: 0.8em;
     }
 
     section.contato .container h3 > span {
@@ -1391,7 +1390,7 @@ footer .cookies .container button {
     }
 
     .duvida .pergunta p {
-        font-size: .8em;
+        font-size: 0.8em;
     }
 
     .duvida .pergunta p > i {
@@ -1401,13 +1400,13 @@ footer .cookies .container button {
     /* seção da resposta */
     .duvida .resposta {
         padding: 10px 30px 40px;
-    } 
+    }
 
     .duvida .resposta .localizacao {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .duvida .resposta .localizacao address {
         text-align: justify;
     }
@@ -1447,7 +1446,7 @@ footer .cookies .container button {
     }
 
     .sobre .container h3 {
-        font-size: .8em;
+        font-size: 0.8em;
     }
 
     .sobre .container h3 > span {
