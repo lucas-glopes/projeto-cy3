@@ -212,7 +212,7 @@ nav .container i.fa-bars {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    overflow: auto;
+    overflow: scroll;
     visibility: hidden;
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
@@ -238,7 +238,7 @@ nav .container i.fa-bars {
     -ms-flex-align: center;
     align-items: center;
     padding: 50px 60px;
-    overflow: auto;
+    overflow: scroll;
     margin-right: -100%;
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
@@ -783,6 +783,7 @@ section.contato .container > div form .input textarea:focus {
 
 section.contato .container > div form .input select {
     color: gray;
+    height: 52px;
 }
 
 section.contato .container > div form .input textarea {
@@ -791,7 +792,7 @@ section.contato .container > div form .input textarea {
 }
 
 section.contato .container > div form input[type="submit"] {
-    min-height: 50px;
+    height: 50px;
     display: block;
     margin: 0 auto;
     border: 2px solid #cc9f73;
