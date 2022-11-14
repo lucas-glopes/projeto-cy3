@@ -244,13 +244,34 @@ header {
     padding-left: 40px;
 }
 
-header > h1 {
+header.titulo {
+    padding: 0;
+}
+
+header.titulo > h1 {
     text-transform: uppercase;
     color: #cc9f73;
     font-size: 1.9em;
     padding: 50px 0;
     text-align: center;
     font-weight: 600;
+}
+
+header.titulo.link h1 {
+    padding: 50px 0 22px;
+}
+
+header.titulo .link-voltar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 35px;
+}
+
+header.titulo a {
+    color: white;
+    text-decoration: underline;
+    font-size: .8em;
 }
 
 header .container {
@@ -820,6 +841,9 @@ section.contato .container > div form input[type="submit"] {
     padding-left: 20px;
 }
 
+/* bloco da página de especialidades */
+
+
 /* seção sobre o dr. leandro */
 .sobre {
     width: 100%;
@@ -888,6 +912,54 @@ section.contato .container > div form input[type="submit"] {
     color: #e3b96e;
     font-size: 1em;
     cursor: pointer;
+}
+
+/* lsita de especialidade da página de especialidades */
+.lista-especialidades .areas {
+    width: 100%;
+    position: relative;
+}
+
+.lista-especialidades .areas ul {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+    padding: 35px 0 50px;
+}
+
+.lista-especialidades .areas ul li {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.lista-especialidades .areas ul li img {
+    height: 100%;
+    width: 100%;
+}
+
+.lista-especialidades .areas ul li p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 24px;
+    color: #151d31;
+    width: max-content;
+    text-align: center;
+}
+
+.lista-especialidades .areas .fundo {
+    background-color: #dad9d6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
 }
 
 /* rodapé */
@@ -1111,6 +1183,12 @@ footer .cookies .container button {
     .sobre .container .links button {
         width: 100%;
         margin: 15px 0;
+    }
+
+    /* lista de especialidade da página de especialidades */
+    .lista-especialidades .areas ul {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        padding: 30px 50px;
     }
 
     /* seção de cookies */
@@ -1378,6 +1456,11 @@ footer .cookies .container button {
         object-fit: cover;
         object-position: top center;
         margin: 0 0 20px;
+    }
+
+    /* lista de especialidade da página de especialidades */
+    .lista-especialidades .areas ul {
+        grid-template: 1fr 1fr / 1fr;
     }
 
     /* container do rodapé */
