@@ -8,6 +8,10 @@ body {
     background-color: #eeeeee;
 }
 
+body.bg-cinza-escuro {
+    background-color: #DAD9D6;
+}
+
 a {
     text-decoration: none;
 }
