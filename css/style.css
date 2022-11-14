@@ -432,7 +432,7 @@ header .container .imagem img {
 }
 
 /* informações */
-.sobre.inicio .container .info {
+.info {
     padding-right: 30px;
 }
 
@@ -762,6 +762,7 @@ section.contato .container > div form .input input,
 section.contato .container > div form .input select,
 section.contato .container > div form .input textarea {
     width: 100%;
+    min-height: 50px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 2px solid #cc9f73;
@@ -786,9 +787,11 @@ section.contato .container > div form .input select {
 
 section.contato .container > div form .input textarea {
     resize: none;
+    min-height: 110px;
 }
 
 section.contato .container > div form input[type="submit"] {
+    min-height: 50px;
     display: block;
     margin: 0 auto;
     border: 2px solid #cc9f73;
@@ -1533,6 +1536,10 @@ footer .cookies .container button {
     }
 
     /* info da seção sobre (página de início) */
+    .sobre.inicio .container .info {
+        padding: 0;
+    }
+
     .sobre.inicio .container .info h3 {
         font-size: 0.8em;
     }
