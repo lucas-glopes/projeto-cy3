@@ -484,7 +484,6 @@ header .container .imagem img {
 }
 
 .sobre.inicio .container .links li {
-    margin: 10px;
     width: 100%;
 }
 
@@ -493,11 +492,12 @@ header .container .imagem img {
     border: 1px solid #d2ad6d;
     border-radius: 10px;
     background-color: transparent;
-    padding: 15px 20px;
+    padding: 15px 40px;
     font-size: 1em;
     text-transform: uppercase;
     cursor: pointer;
     color: #d2ad6d;
+    margin: 10px 0;
 }
 
 /* especialidades */
@@ -1092,14 +1092,14 @@ section.contato .container > div form input[type="submit"] {
 }
 
 .sobre .container .links button {
-    border: 1px solid #e3b96e;
+    border: 1px solid #d2ad6d;
     background-color: transparent;
     width: 220px;
     padding: 14px 0;
     border-radius: 10px;
     margin: 0 12px;
     text-transform: uppercase;
-    color: #e3b96e;
+    color: #d2ad6d;
     font-size: 1em;
     cursor: pointer;
 }
@@ -1360,7 +1360,7 @@ footer .cookies .container button {
     }
 
     /* header */
-    header > h1 {
+    header.titulo > h1 {
         font-size: 1.5em;
         padding: 35px 0;
     }
@@ -1418,7 +1418,7 @@ footer .cookies .container button {
 
     .sobre .container .links button {
         width: 100%;
-        margin: 15px 0;
+        margin: 10px 0;
     }
 
     /* lista de especialidade da página de especialidades */
@@ -1447,24 +1447,9 @@ footer .cookies .container button {
 /* responsivo para telas pequenas */
 @media screen and (max-width: 767px) {
     /* header */
-    header > h1 {
+    header.titulo > h1 {
         font-size: 1.2em;
-        padding: 20px 0;
-    }
-
-    /* container do menu de hamburger */
-    .menu-hamburguer .container {
-        width: 100%;
-    }
-
-    /* ícone de fechar menu de hambúrguer */
-    .menu-hamburguer .container .fa-xmark {
-        font-size: 2em;
-    }
-
-    /* contato do menu de hambúrguer */
-    .menu-hamburguer .container .contato {
-        font-size: 0.7em;
+        padding: 30px 0;
     }
 
     /* header */
@@ -1515,6 +1500,21 @@ footer .cookies .container button {
         object-fit: cover;
         -o-object-position: top center;
         object-position: top center;
+    }
+
+    /* container do menu de hamburger */
+    .menu-hamburguer .container {
+        width: 100%;
+    }
+
+    /* ícone de fechar menu de hambúrguer */
+    .menu-hamburguer .container .fa-xmark {
+        font-size: 2em;
+    }
+
+    /* contato do menu de hambúrguer */
+    .menu-hamburguer .container .contato {
+        font-size: 0.7em;
     }
 
     /* seção sobre (página de início) */
