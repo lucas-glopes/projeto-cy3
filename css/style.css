@@ -1179,7 +1179,14 @@ footer .rodape {
 }
 
 /* botão do whatsapp do footer */
-footer .container.btn-wa {
+.whatsapp {
+    position: sticky;
+    bottom: 95px;
+    width: 100%;
+    height: max-content;
+}
+
+.whatsapp .container.btn-wa {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1187,9 +1194,11 @@ footer .container.btn-wa {
     -ms-flex-pack: end;
     justify-content: flex-end;
     padding: 12px;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
-footer .container.btn-wa button {
+.whatsapp .container.btn-wa button {
     color: white;
     cursor: pointer;
     border: none;
@@ -1198,9 +1207,12 @@ footer .container.btn-wa button {
     padding: 10px 15px 13px;
     text-transform: uppercase;
     font-size: 0.8em;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
 }
 
-footer .container.btn-wa button i {
+.whatsapp .container.btn-wa button i {
     font-size: 1.7em;
     -webkit-transform: translateY(3px);
     -ms-transform: translateY(3px);
@@ -1208,7 +1220,7 @@ footer .container.btn-wa button i {
     margin-right: 5px;
 }
 
-footer .rodape .container {
+.rodape .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1343,6 +1355,11 @@ footer .cookies .container button {
 
 /* responsivo para telas médias */
 @media screen and (max-width: 1023px) {
+    /* geral */
+    body {
+        padding-bottom: 150px;
+    }
+
     /* ajustar padding e width do nav */
     nav {
         padding: 0;
@@ -1427,6 +1444,11 @@ footer .cookies .container button {
     .sobre .container .links button {
         width: 100%;
         margin: 10px 0;
+    }
+
+    /* whatsapp */
+    .whatsapp {
+        bottom: 150px;
     }
 
     /* lista de especialidade da página de especialidades */
@@ -1753,6 +1775,11 @@ footer .cookies .container button {
         -ms-grid-rows: 1fr 1fr;
         -ms-grid-columns: 1fr;
         grid-template: 1fr 1fr / 1fr;
+    }
+
+    /* whatsapp */
+    .whatsapp {
+        bottom: 0;
     }
 
     /* container do rodapé */

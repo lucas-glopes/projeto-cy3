@@ -36,6 +36,9 @@ botaoAceitarCookies.addEventListener("click", () => {
 
     // tirar padding do body
     document.querySelector("body").style.paddingBottom = "0";
+
+    // corrigir posição do botão de WA
+    document.querySelector(".whatsapp").style.bottom = "0";
 });
 
 // mostra resposta das perguntas frequentes
