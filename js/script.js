@@ -33,6 +33,9 @@ const botaoAceitarCookies = document.querySelector(
 
 botaoAceitarCookies.addEventListener("click", () => {
     document.querySelector("footer .cookies").style.display = "none";
+
+    // tirar padding do body
+    document.querySelector("body").style.paddingBottom = "0";
 });
 
 // mostra resposta das perguntas frequentes
