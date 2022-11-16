@@ -413,7 +413,7 @@ header .container .imagem img {
 /* sobre o dr. (página de início) */
 .sobre.inicio {
     padding: 0 10px;
-    background: url("../images/Logo BG.png") no-repeat center;
+    background: url("../images/logo-bg.png") no-repeat center;
 }
 
 .sobre.inicio .container {
@@ -649,7 +649,7 @@ header .container .imagem img {
 /* contato */
 section.contato {
     padding: 0 10px;
-    background: #eeeeee url("../images/Logo\ BG.png") right bottom no-repeat;
+    background: #eeeeee url("../images/logo-bg.png") right bottom no-repeat;
     background-size: 470px;
 }
 
@@ -982,7 +982,7 @@ section.contato .container > div form input[type="submit"] {
     background-color: white;
     width: 100%;
     padding: 0 10px;
-    background: url("../images/Logo BG.png") no-repeat center;
+    background: url("../images/logo-bg.png") no-repeat center;
     background-size: 470px;
 }
 
